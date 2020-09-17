@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+<meta  lang="zh-CN" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#fff" id="theme-color">
+  <link rel="icon" href="/img/bosh.png">
+  <title>Your Bosh</title>
+  <script>
+    // control reverse button
+    var reverseDarkList = {
+      dark: 'light',
+      light: 'dark'
+    };
+    var themeColor = {
+      dark: '#1c1c1e',
+      light: '#fff'
+    }
+    // get the data of css prefers-color-scheme
+    var getCssMediaQuery = function() {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    };
+    // reverse current darkmode setting function
+    var reverseDarkModeSetting = function() {
+      var setting = localStorage.getItem('user-color-scheme');
+      if(reverseDarkList[setting]) {
+        setting = reverseDarkList[setting];
+      } else if(setting === null) {
+        setting = reverseDarkList[getCssMediaQuery()];
+      } else {
+        return;
+      }
+      localStorage.setItem('user-color-scheme', setting);
+      return setting;
+    };
+    // apply current darkmode setting
+    var setDarkmode = function(mode) {
+      var setting = mode || localStorage.getItem('user-color-scheme');
+      if(setting === getCssMediaQuery()) {
+        document.documentElement.removeAttribute('data-user-color-scheme');
+        localStorage.removeItem('user-color-scheme');
+        document.getElementById('theme-color').content = themeColor[setting];
+      } else if(reverseDarkList[setting]) {
+        document.documentElement.setAttribute('data-user-color-scheme', setting);
+        document.getElementById('theme-color').content = themeColor[setting];
+      } else {
+        document.documentElement.removeAttribute('data-user-color-scheme');
+        localStorage.removeItem('user-color-scheme');
+        document.getElementById('theme-color').content = themeColor[getCssMediaQuery()];
+      }
+    };
+    setDarkmode();
+  </script>
+  <script>
+    function loadScript(url, cb) {
+      var script = document.createElement('script');
+      script.src = url;
+      if (cb) script.onload = cb;
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  </script>
+  
+  <link rel="preload" href="//at.alicdn.com/t/font_1946621_vpj3dq9ceqa.css" as="style" >
+  <link rel="preload" href="//at.alicdn.com/t/font_1952792_89b4ac4k4up.css" as="style" >
+  
+  <link rel="preload" href="//cdn.jsdelivr.net/npm/fslightbox@3.1.0/index.min.js" as="script">
+  
+  
+  <link rel="preload" href="/js/lib/lozad.min.js" as="script">
+  
+  
+  
+  
+  
+  
+  
+  
+<link rel="stylesheet" href="/css/main.css">
+
+  
+  
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1946621_vpj3dq9ceqa.css">
+
+  
+  
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1952792_89b4ac4k4up.css">
+
+  
+  
+  
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+
+<body>
+  <div class="wrapper">
+    
+    <nav class="navbar">
+  <div class="navbar-logo">
+    <span class="navbar-logo-main">
+      
+      <img class="navbar-logo-img" src="/img/bosh.png">
+      
+      <span class="navbar-logo-dsc">Your Bosh</span>
+    </span>
+  </div>
+  <div class="navbar-menu">
+    
+    <a href="/" class="navbar-menu-item">首页 </a>
+    
+    <a href="/archives" class="navbar-menu-item">归档 </a>
+    
+    <a href="/tags" class="navbar-menu-item">标签 </a>
+    
+    <a href="/categories" class="navbar-menu-item">分类 </a>
+    
+    <a href="/about" class="navbar-menu-item">关于 </a>
+    
+    <a href="/links" class="navbar-menu-item">友链 </a>
+    
+    <a class="navbar-menu-item darknavbar" id="dark"><i class="iconfont icon-weather"></i></a>
+  </div>
+</nav>
+    
+    <div class="section-wrap">
+      <div class="container">
+        <div class="columns">
+          <main class="main-column">
+<div class="image-wrapper">
+  <img src="https://p0.meituan.net/travelcube/d2ab674fa0e4c875865e524d82fe15a34372569.png" data-src="https://p0.meituan.net/travelcube/d2ab674fa0e4c875865e524d82fe15a34372569.png"
+    srcset="data:image/svg+xml,%3Csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20viewBox=&#39;0%200%20300%20300&#39;%3E%3C/svg%3E"
+    class="image lozad">
+</div>
+
+<article class="card card-content">
+  <header>
+    <h1 class="post-title">
+      美团外卖活动
+    </h1>
+  </header>
+  <div class="post-meta post-show-meta">
+    <time datetime="2020-09-17T13:47:58.055Z" style="display: flex; align-items: center;">
+      <i class="iconfont icon-calendar" style="margin-right: 2px;"></i>
+      <span>2020-09-17</span>
+    </time>
+    
+    
+    <span class="dot"></span>
+    <span>4.9k 字</span>
+    
+  </div>
+  
+  </header>
+  <div id="section" class="post-content">
+    <ul>
+<li><h1 id="美团外卖活动"><a href="#美团外卖活动" class="headerlink" title="美团外卖活动"></a>美团外卖活动</h1></li>
+<li><h2 id="热门活动"><a href="#热门活动" class="headerlink" title="热门活动"></a>热门活动</h2><ul>
+<li><h3 id="店铺满减-促销-提客单"><a href="#店铺满减-促销-提客单" class="headerlink" title="店铺满减 #促销 #提客单"></a>店铺满减 #促销 #提客单</h3><ul>
+<li>活动介绍<ul>
+<li>满减活动，用户下单满足条件后可享受减免优惠。与首单立减、折扣商品、第二份半价、店外发券互斥。</li>
+</ul>
+</li>
+<li>活动作用<ul>
+<li>满减是种视觉错觉，目的不是给用户提供实惠，而是让他感觉实惠。从而提升用户端访问转化率。满减的精髓在于设置门槛和优惠力度，最理想的效果就是让顾客感觉占了“便宜”。提升销量只是效果之一，提高客单才充分发挥了满减的作用，而提升访问转化率是我们做满减的首要目标。</li>
+</ul>
+</li>
+<li>活动设置建议<ul>
+<li>(1) 首先要明白各档满减的目的：</li>
+<li>第一档：提高曝光量和进店转化率，所以第一档力度要大，使用门槛要低，满足基本顾客需求，提高进店转化率；</li>
+<li>第二档：提高下单量和客单价，所以第二档定价要价格偏高，可结合本店客单价，第二档要高于客单价，顾客会购买额外的产品进行凑单；</li>
+<li>第三档：防拆单，针对门店商品SKU数量大种类全的情况，要计算成本，例如考虑整单价格比单次购买的合适，防止顾客下单多次；</li>
+<li>(2) 满减金额的判定：</li>
+<li>根据顾客消费金额分布情况，还要在做营销活动的时候就需要对不同的品牌定位、经营目标、用户群进行区分。</li>
+</ul>
+</li>
+<li>案例学习<ul>
+<li>（1）误区1：满减的金额越大，满减力度就越大吗？</li>
+<li>举个例子：满10减5和满30减10，哪个满减的力度更大呢？第一个满减活动虽然只减了5元，但是折扣力度是5除以10，为50%。而第二个活动虽然减了10元，比第一个活动减的金额要多。但是折扣力度为10/30等于33%。折扣力度要小于前者，所以第一个满减活动的力度更大。</li>
+<li>（2）误区2：满减设置是根据平均客单价来设置的吗？</li>
+<li>用平均客单价来定满减会存在个问题：平均客单价不足以代表不同消费层次客户的消费水平。</li>
+<li>为了便于理解，我们举个极端的例子，有两种客户，第一种客户消费水平比较低，客单价为20元。第二种客户消费水平比较高，客单价为80元。那平均客单价为20元加80元除以2等于50元。</li>
+<li>那如果我们以50元做为满减的设置标准，对于20元客单价的客户而已，50元优惠门槛太高，享受不到，不会下单。而对于100元客单价的客户，优惠的吸引力又不大，也会到导致用户放弃点餐。所以平均客单价不能解决不同消费层次的用户点餐需求。</li>
+<li>这里建议是用客单价分布作为满减设置的参考标准，客单价分布能很好的表达不同消费水平用户的价格分布，我们可以用客单价分布最密集的，占比最高的客单价作为满减的门槛。客单价分布在平台都能查看到。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h3 id="折扣活动-促转化-新手必建"><a href="#折扣活动-促转化-新手必建" class="headerlink" title="折扣活动 #促转化 #新手必建"></a>折扣活动 #促转化 #新手必建</h3><ul>
+<li>活动介绍<ul>
+<li>折扣商品，用户购买指定商品可享受折扣优惠，与满减活动互斥。一个店铺的运营离不开效益，而利润款就是主要的盈利商品，折扣活动就是提高销量的重要营销手段。</li>
+</ul>
+</li>
+<li>活动作用<ul>
+<li>折扣商品是一把双刃剑，低价促销会迅速提升单量，但如果想在区域内站稳脚跟，那么意味着活动时间拉长，让用户熟悉并习惯该商品。建议商家在推广新品或大型节日时，可低价促销，迅速夺得一部分用户，赢得口碑。生鲜果蔬、鲜花蛋糕等商家，需要针对短保商品打折，加快销售，另外新品上市、换季清理库存等，也可通过折扣价进行推广。</li>
+</ul>
+</li>
+<li>活动设置建议<ul>
+<li>(1) 首选高毛利商品，这样才能在保证在促销的情况下，有利可赚；</li>
+<li>(2) 折扣活动尽量呈梯度展示，比如4折、6折、7折，给用户更多选择。</li>
+</ul>
+</li>
+<li>案例学习<ul>
+<li>为了将折扣活动的作用发挥到极致，很可能会用力过猛，走进误区，下面分享几个反面案例：</li>
+<li>(1) 表面上高额满减，进店后全是折扣</li>
+<li>有些商家为了提升进店转化率，利用折扣与满减不同享这项功能，将满减活动做到很大，商品全部做成折扣。其实，这样的操作会使得顾客进店后有一种被欺骗的感觉，而严重损伤到顾客感情，影响复购率。因此，除非商圈内顾客都习惯使用折扣活动，否则，建议不要轻易使用这种方式。</li>
+<li>(2) 为顾客优惠着想，配置过多折扣商品</li>
+<li>有老板设身处地为顾客考虑，认为自己店内的折扣活动确实比满减更优惠，因此便将店内的主营产品全做成了折扣，奈何顾客却不埋单。因为该商圈顾客点选了主营的折扣产品之后，又选择了其他满减产品，二者不同享，造成客单价非常高的现象，顾客很可能觉得麻烦而退出店铺，不再消费。因此，当不确定该商圈顾客消费习惯的时候，主营产品最好设置满减和折扣两种形式，便于用户选择。</li>
+<li>(3) 忽略原价起送，未调整起送价</li>
+<li>另外，很多老板为了体现折扣产品的力度，把原价标得很高，却忽略了折扣商品是按照原价计算起送门槛，一时忘记修改起送价而造成了亏损。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h3 id="立减运费-引流-促转化"><a href="#立减运费-引流-促转化" class="headerlink" title="立减运费 #引流 #促转化"></a>立减运费 #引流 #促转化</h3><ul>
+<li>活动介绍<ul>
+<li>减配送费，即帮助用户承担一部分配送费，在用户支付时，自动减去一定额度的配送费金额。</li>
+</ul>
+</li>
+<li>活动作用<ul>
+<li>数据表明，用户对配送费有一定的敏感度，当配送费过高时，单量会有一定幅度的降低，这也说明了，配送费对用户是否进店有直接影响。所以减配送费营销活动，可以更好的帮助商家提高进店转化率，进而提高下单量。另外也可提升用户对配送服务的满意度，从而提升搜索排名。</li>
+</ul>
+</li>
+<li>活动设置建议<ul>
+<li>(1) 配送费较高的商家，可通过该活动减低配送费；</li>
+<li>(2) 配置的减配送费的金额可在1-3元之间。</li>
+</ul>
+</li>
+<li>案例学习<ul>
+<li>某门店自上活动期，单量呈缓慢上升，最高单量最高达207单，而商家每单设置的活动，其实只是减配送费1元，虽然不能说该活动直接带动了单量的提升，但不否认，当用户支付到最后，看到减去1元/2元配送费时，还是蛮有吸引力滴！</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h3 id="新客立减-拉新-引流"><a href="#新客立减-拉新-引流" class="headerlink" title="新客立减 #拉新 #引流"></a>新客立减 #拉新 #引流</h3><ul>
+<li>活动介绍<ul>
+<li>新客立减，顾名思义即是本店铺新顾客才能享受的优惠，该活动与满减、下单返券、进店领券、折扣商品、买赠活动同时享用。注意区分新客立减和新用户立减，新客立减是针对第一次在您家店铺下单的顾客，而新用户立减针对第一次在美团相关平台下单的顾客；</li>
+</ul>
+</li>
+<li>活动作用<ul>
+<li>新客立减针对本店新客进行下单立减，来达到拉新及提升单量的目的。</li>
+</ul>
+</li>
+<li>活动设置建议<ul>
+<li>(1) 我们设定新客立减活动目的是促进新客户，只能为门店新顾客使用，所以老板们可将金额设置较大，在2-5元之间；</li>
+<li>(2) 活动搭配：与满减活动/折扣活动搭配，高额满减或高折扣可调低新用户力度，低满减或低折扣可调高新用户力度，更容易吸引客户流量。</li>
+<li>例：门店30-15，优惠金额可在2<del>4元，8.5折，优惠金额可在6</del>8元（仅供参考）。</li>
+</ul>
+</li>
+<li>案例学习<ul>
+<li>这是一家主营水果品类的商家，开店初期，下单转化率较低。老板说，感觉什么活动也做了，但单量还是不高。后来，老板20号做了新客立减1元活动，单量开始慢慢有所提升。老板说，曝光量并没有太大的提升，但转化率提高了5个点左右，订单整体提高了20单左右。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h2 id="新推活动"><a href="#新推活动" class="headerlink" title="新推活动"></a>新推活动</h2><ul>
+<li><h3 id="邀请购买-引流-提客单"><a href="#邀请购买-引流-提客单" class="headerlink" title="邀请购买 #引流 #提客单"></a>邀请购买 #引流 #提客单</h3><ul>
+<li>活动介绍<ul>
+<li>推广员邀请用户购买店铺商品，邀请成功后，推广员可以获得商家设置的商家券奖励。</li>
+</ul>
+</li>
+<li>活动作用<ul>
+<li>活动可以保证每一次奖励都已经产生有效推广，同时奖励可以刺激产生再次购买，即每一张商家券的使用可带来2单。</li>
+</ul>
+</li>
+<li>活动设置建议<ul>
+<li>如何在短期内培训我的推广员？</li>
+<li>1、扫描活动二维码，即可在活动页了解活动内容；</li>
+<li>2、建立答疑群把招募的推广员拉到一个微信群，安排内部工作人员解答疑难问题，同时也能定期监督和激励自己的队伍；</li>
+<li>3、生成固定软文模板，优秀案例定期交给推广员。</li>
+</ul>
+</li>
+<li>推广商品建议<ul>
+<li>店内热卖商品、特价活动商品、优质特色商品</li>
+</ul>
+</li>
+<li>案例学习<ul>
+<li>商家A和供应商合作，包销某款商品达到一定量级后得到一定返佣，商家A将商家券设置为面额极低，门槛极高的券，同时不开启小程序广告位，通过微信群组织内部员工全员推广，最后将一部分返佣分给员工作为推广奖励；</li>
+<li>商家B招募临时推广员，让推广员按活动说明在附近拉新用户，根据推广员的邀请成果给予奖励；</li>
+<li>商家C将活动二维码打印出来，放在线下店中，逛店用户扫描即可了解活动，帮助商家推广同时获得商家券奖励，刺激再次购买；</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h3 id="爆品活动-推新品-推爆款"><a href="#爆品活动-推新品-推爆款" class="headerlink" title="爆品活动 #推新品 #推爆款"></a>爆品活动 #推新品 #推爆款</h3><ul>
+<li>活动介绍<ul>
+<li>爆品，用户购买指定商品可享受折扣优惠，爆款就是非常火爆的商品，高流量、高曝光量、高订单量就是它的具体表现，爆品是引流的重要营销手段。</li>
+</ul>
+</li>
+<li>活动作用<ul>
+<li>(1) 限制优惠力度，强化商品的引流作用，为店铺带来更多的流量，后续扩充至品类流量和平台流量，用于获取品类新客和闪购新客；</li>
+<li>(2) 可有效帮助商户推广爆款商品，并带动店铺其他商品，实现关联销售；</li>
+<li>(3) 支持单独限制爆品的限购：单品限购、每单限购、用户限购；</li>
+<li>(4) 用户下单时，爆品支持与满减、部分满减、折扣等优惠活动同享；</li>
+<li>(5) 不支持设置7天内调价幅度超过30%的商品，每门店最多设置10个爆品，可有效遏制原价虚高行为，避免刷单。</li>
+</ul>
+</li>
+<li>活动设置建议<ul>
+<li>(1) 建议设置1~5款爆款商品引流；</li>
+<li>(2) 在打造爆款的前期阶段应把利润尽量降低，做好不盈利的准备，这样才方便爆款商品的打造；</li>
+<li>(3) 利用好与其他活动同享的规则，可搭配满减活动进行营销。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h3 id="好友助力活动-促销-引流-拉新"><a href="#好友助力活动-促销-引流-拉新" class="headerlink" title="好友助力活动 #促销 #引流 #拉新"></a>好友助力活动 #促销 #引流 #拉新</h3><ul>
+<li>活动介绍<ul>
+<li>活动流程：用户邀请规定数量的好友参与助力，助力成功后发起者可获得一张优惠力度较大的商品券，参与助力者可获得一张优惠力度较小的商品券。</li>
+</ul>
+</li>
+<li>流程: 看到活动-发起活动-邀请好友-助力成功获得商品券-用券下单，好友发起活动-继续邀请好友-…</li>
+<li>活动作用<ul>
+<li>(1) 能让更多的用户看到活动商品，增加店铺内商品的用户触达量。</li>
+<li>(2) 获取门店新客。</li>
+<li>(3) 提升店铺订单量。</li>
+</ul>
+</li>
+<li>活动配置说明</li>
+<li>案例学习<ul>
+<li>商家A想利用优惠活动吸引更多的店外用户来店内下单，但目前的活动大多为店内活动，怎么才能发动店内用户的力量拉动更多的店外用户进店下单呢？后来商家A了解到了好友助力这种活动玩法，好友助力活动采用的是好友拉好友助力的形式，可以产生裂变的效果。攻略如下：</li>
+<li>攻略一：选什么样的商品参加活动效果会好一些？</li>
+<li>答：店内高销量的商品。因为高销量的商品浏览的用户量大，发起活动的人数多，自然会拉来更多的店外用户进店购买。</li>
+<li>攻略二：设置多少人助力比较合适？</li>
+<li>答：助力人数可跟设置的优惠券的面额综合考虑。若设置5元左右的优惠券，助力人数适合设置3人或4人，若设置10元以上的优惠券，助力人数适合设置5人或6人。</li>
+<li>【活动效果分析】活动上线之后商家A分析了活动的效果：主要从活动参与人数、订单量和门店新客获取量三个维度分析:</li>
+<li>（1）活动参与人数：活动期间平均每天参与活动的人数为400人，其中有50%的用户为此商家的潜新用户（潜新用户指从未在此门店下过单的用户）。</li>
+<li>（2）活动期间订单量：活动上线后的日均订单量较活动上线前日均订单量提升了约30单。</li>
+<li>（3）获取门店新客数：平均每天转化15名门店潜新用户下单。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h2 id="门店类活动"><a href="#门店类活动" class="headerlink" title="门店类活动"></a>门店类活动</h2><ul>
+<li><h3 id="满减运费-促转化-提客单"><a href="#满减运费-促转化-提客单" class="headerlink" title="满减运费 #促转化 #提客单"></a>满减运费 #促转化 #提客单</h3><ul>
+<li>活动介绍<ul>
+<li>满减运费，订单满足指定金额后，用户可享受减免配送费；与立减运费互斥。</li>
+</ul>
+</li>
+<li>活动作用<ul>
+<li>数据表明，用户对配送费有一定的敏感度，当配送费过高时，单量会有一定幅度的降低，这也说明了，配送费对用户是否进店有直接影响。所以减配送费营销活动，可以更好的帮助商家提高进店转化率，进而提高下单量。商家通过配置阶梯满减配送费，根据不同交易金额，收取不同配送费用，从而达到提升客单价的效果。</li>
+</ul>
+</li>
+<li>活动设置建议<ul>
+<li>(1) 配送费较高的商家，可通过该活动减低配送费；</li>
+<li>(2) 配置的立减金额根据订单交易金额逐渐递增，比如订单满30减2元配送费，满40减3元配送费。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h3 id="满赠活动-引流-提客单"><a href="#满赠活动-引流-提客单" class="headerlink" title="满赠活动 #引流 #提客单"></a>满赠活动 #引流 #提客单</h3></li>
+</ul>
+</li>
+<li><h2 id="商品类活动"><a href="#商品类活动" class="headerlink" title="商品类活动"></a>商品类活动</h2><ul>
+<li><h3 id="买赠活动-促销"><a href="#买赠活动-促销" class="headerlink" title="买赠活动 #促销"></a>买赠活动 #促销</h3></li>
+<li><h3 id="部分满减-品牌活动-促转化"><a href="#部分满减-品牌活动-促转化" class="headerlink" title="部分满减 #品牌活动 #促转化"></a>部分满减 #品牌活动 #促转化</h3><ul>
+<li>活动介绍<ul>
+<li>支持配置基于商品维度的部分满减活动。创建部分满减活动后，购买指定商品满足满减门槛即可享受活动优惠。目前平台提供两种方式帮助商家指定促销商品的范围，分别是：</li>
+<li>(1) 店铺满减：指全场商品促销，促销期间，所有处于平台在售的商品都参与促销；</li>
+<li>(2) 部分满减：指定部分商品促销，促销期间，只有指定的商品参与促销。最多指定100个商品。</li>
+</ul>
+</li>
+<li>活动作用<ul>
+<li>可有效帮助商户推广爆款菜品、清库存、提升单量及交易额；通过商品带动交叉品类关联销售，联合品牌商推进品牌满减、品类满减；强化商品的引流作用，同商圈的商家抱团做平台商品促销，形成促销氛围，激励用户消费；大连锁KA，还可以将旗下门店统一发布商品满减，强化品牌势能。</li>
+</ul>
+</li>
+<li>活动设置建议<ul>
+<li>(1) 目前支持品牌满减、品类满减、指定商品满减，可根据不同情况设置；</li>
+<li>(2) 要明确各档满减的目的</li>
+<li>第一档：提高曝光量和进店转化率，所以第一档力度要大，使用门槛要低，满足基本顾客需求，提高进店转化率；</li>
+<li>第二档：提高下单量和客单价，所以第二档定价要价格偏高，可结合本店客单价，第二档要高于客单价，顾客会购买额外的产品进行凑单；</li>
+<li>第三档：防拆单，针对门店商品SKU数量大种类全的情况，要计算成本，例如考虑整单价格比单次订购合适，防止顾客下单多次。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h3 id="x元m件-组合优惠"><a href="#x元m件-组合优惠" class="headerlink" title="x元m件 #组合优惠"></a>x元m件 #组合优惠</h3></li>
+<li><h3 id="第n件优惠-商超生鲜首选"><a href="#第n件优惠-商超生鲜首选" class="headerlink" title="第n件优惠 #商超生鲜首选"></a>第n件优惠 #商超生鲜首选</h3></li>
+<li><h3 id="加价换购-推新品-提客单"><a href="#加价换购-推新品-提客单" class="headerlink" title="加价换购 #推新品 #提客单"></a>加价换购 #推新品 #提客单</h3><ul>
+<li>活动介绍<ul>
+<li>加价换购，当顾客达到购满X元，获得换购特惠商品机会的功能，例如购买满25元，获得1元购可乐的特权。</li>
+</ul>
+</li>
+<li>活动作用<ul>
+<li>加价换购活动可直接提升客单价，当顾客满一定额度后，可享受优惠价，促进用户下单，直接提升客单价；也可间接提升利润，可选成本低，搭配性强的商品，以此提高利润，让老板们更有“钱”景！</li>
+</ul>
+</li>
+<li>活动设置建议<ul>
+<li>(1) 适合设置价格不高，但搭配性强的商品，用户下单意愿高。如一分钱换购矿泉水，一块钱换购纯牛奶/可乐；</li>
+<li>(2) 以超市品类为例，数据显示，商家配置热销品（例如酒水饮料、乳制品）和清库存（例如生活百货、美容洗护）居多；</li>
+<li>(3) 展示数量限制：目前每个商户最多配置100个加价换购商品。</li>
+</ul>
+</li>
+<li>案例学习<ul>
+<li>某商户近几个月一直在做加价换购活动，不光带来了客单的提升，复购也呈现显著变化。经调研，商家反馈如下：</li>
+<li>对比满赠活动，赠送是一种商家的思维，送了就是诚意，顾客要不要不管。1元换购是站在顾客的角度的，顾客如果需要，可以花一点钱换取福利；如果不需要也不会被刻意打扰，采取自愿原则。而且换购的这个产品和服务如果做好了，会给顾客制造出意外的惊喜和喜悦，这样一来就会让顾客对这一次消费的满意度更高，那么复购率自然就上去了。从另一个层面来说，获取赠品需要加一块钱，这一块钱本身就是一个顾客筛选的过程，能够有效的把那些真正需要的顾客和伪需求的顾客区分开来，这也是精准营销和遍地拉网式营销的区别。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h2 id="优惠券"><a href="#优惠券" class="headerlink" title="优惠券"></a>优惠券</h2><ul>
+<li><h3 id="商家券-控成本-促销-提客单"><a href="#商家券-控成本-促销-提客单" class="headerlink" title="商家券 #控成本 #促销 #提客单"></a>商家券 #控成本 #促销 #提客单</h3></li>
+<li><h3 id="店外发券-引流"><a href="#店外发券-引流" class="headerlink" title="店外发券 #引流"></a>店外发券 #引流</h3></li>
+<li><h3 id="下单返券-促复购"><a href="#下单返券-促复购" class="headerlink" title="下单返券 #促复购"></a>下单返券 #促复购</h3></li>
+<li><h3 id="商品券-品牌活动-促转化"><a href="#商品券-品牌活动-促转化" class="headerlink" title="商品券 #品牌活动 #促转化"></a>商品券 #品牌活动 #促转化</h3></li>
+<li><h3 id="配送费券-促转化"><a href="#配送费券-促转化" class="headerlink" title="配送费券 #促转化"></a>配送费券 #促转化</h3></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+  
+  <div class="post-note note-warning copyright" style="margin-top: 42px">
+    <p><span style="font-weight: bold;">作者：</span><a target="_blank" rel="nofollow noopener noreferrer" href="http://isbosh.com/about">BoSh</a></p>
+    <p><span style="font-weight: bold;">文章链接：</span><a target="_blank" rel="nofollow noopener noreferrer" href="http://isbosh.com/2020/09/17/meituan/">http://isbosh.com/2020/09/17/meituan/</a></p>
+    <p><span style="font-weight: bold;">版权声明：</span>本博客所有文章除特别声明外，均采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0 协议</a>。转载请注明出处！</p>
+  </div>
+  
+  </div>
+</article>
+<div class="nav">
+  
+  <div class="nav-item-prev">
+    <a href="/2020/09/17/test-world/" class="nav-link">
+      <i class="iconfont icon-left nav-prev-icon"></i>
+      <div>
+        <div class="nav-label">上一篇</div>
+        
+        <div class="nav-title">Hello World </div>
+        
+      </div>
+    </a>
+  </div>
+  
+  
+  <div class="nav-item-next">
+    <a href="/2020/09/17/hello-world/" class="nav-link">
+      <div>
+        <div class="nav-label">下一篇</div>
+        
+        <div class="nav-title">Hello World </div>
+        
+      </div>
+      <i class="iconfont icon-right nav-next-icon"></i>
+    </a>
+  </div>
+  
+</div>
+
+<div class="card card-content toc-card" id="mobiletoc">
+  <div class="toc-header"><i class="iconfont icon-menu" style="padding-right: 2px;"></i>目录</div>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BE%8E%E5%9B%A2%E5%A4%96%E5%8D%96%E6%B4%BB%E5%8A%A8"><span class="toc-text">美团外卖活动</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%83%AD%E9%97%A8%E6%B4%BB%E5%8A%A8"><span class="toc-text">热门活动</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%97%E9%93%BA%E6%BB%A1%E5%87%8F-%E4%BF%83%E9%94%80-%E6%8F%90%E5%AE%A2%E5%8D%95"><span class="toc-text">店铺满减 #促销 #提客单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%98%E6%89%A3%E6%B4%BB%E5%8A%A8-%E4%BF%83%E8%BD%AC%E5%8C%96-%E6%96%B0%E6%89%8B%E5%BF%85%E5%BB%BA"><span class="toc-text">折扣活动 #促转化 #新手必建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AB%8B%E5%87%8F%E8%BF%90%E8%B4%B9-%E5%BC%95%E6%B5%81-%E4%BF%83%E8%BD%AC%E5%8C%96"><span class="toc-text">立减运费 #引流 #促转化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%AE%A2%E7%AB%8B%E5%87%8F-%E6%8B%89%E6%96%B0-%E5%BC%95%E6%B5%81"><span class="toc-text">新客立减 #拉新 #引流</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E6%8E%A8%E6%B4%BB%E5%8A%A8"><span class="toc-text">新推活动</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%82%80%E8%AF%B7%E8%B4%AD%E4%B9%B0-%E5%BC%95%E6%B5%81-%E6%8F%90%E5%AE%A2%E5%8D%95"><span class="toc-text">邀请购买 #引流 #提客单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%88%86%E5%93%81%E6%B4%BB%E5%8A%A8-%E6%8E%A8%E6%96%B0%E5%93%81-%E6%8E%A8%E7%88%86%E6%AC%BE"><span class="toc-text">爆品活动 #推新品 #推爆款</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A5%BD%E5%8F%8B%E5%8A%A9%E5%8A%9B%E6%B4%BB%E5%8A%A8-%E4%BF%83%E9%94%80-%E5%BC%95%E6%B5%81-%E6%8B%89%E6%96%B0"><span class="toc-text">好友助力活动 #促销 #引流 #拉新</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%A8%E5%BA%97%E7%B1%BB%E6%B4%BB%E5%8A%A8"><span class="toc-text">门店类活动</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BB%A1%E5%87%8F%E8%BF%90%E8%B4%B9-%E4%BF%83%E8%BD%AC%E5%8C%96-%E6%8F%90%E5%AE%A2%E5%8D%95"><span class="toc-text">满减运费 #促转化 #提客单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BB%A1%E8%B5%A0%E6%B4%BB%E5%8A%A8-%E5%BC%95%E6%B5%81-%E6%8F%90%E5%AE%A2%E5%8D%95"><span class="toc-text">满赠活动 #引流 #提客单</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%95%86%E5%93%81%E7%B1%BB%E6%B4%BB%E5%8A%A8"><span class="toc-text">商品类活动</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B9%B0%E8%B5%A0%E6%B4%BB%E5%8A%A8-%E4%BF%83%E9%94%80"><span class="toc-text">买赠活动 #促销</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E5%88%86%E6%BB%A1%E5%87%8F-%E5%93%81%E7%89%8C%E6%B4%BB%E5%8A%A8-%E4%BF%83%E8%BD%AC%E5%8C%96"><span class="toc-text">部分满减 #品牌活动 #促转化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x%E5%85%83m%E4%BB%B6-%E7%BB%84%E5%90%88%E4%BC%98%E6%83%A0"><span class="toc-text">x元m件 #组合优惠</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%ACn%E4%BB%B6%E4%BC%98%E6%83%A0-%E5%95%86%E8%B6%85%E7%94%9F%E9%B2%9C%E9%A6%96%E9%80%89"><span class="toc-text">第n件优惠 #商超生鲜首选</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A0%E4%BB%B7%E6%8D%A2%E8%B4%AD-%E6%8E%A8%E6%96%B0%E5%93%81-%E6%8F%90%E5%AE%A2%E5%8D%95"><span class="toc-text">加价换购 #推新品 #提客单</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%98%E6%83%A0%E5%88%B8"><span class="toc-text">优惠券</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%95%86%E5%AE%B6%E5%88%B8-%E6%8E%A7%E6%88%90%E6%9C%AC-%E4%BF%83%E9%94%80-%E6%8F%90%E5%AE%A2%E5%8D%95"><span class="toc-text">商家券 #控成本 #促销 #提客单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%97%E5%A4%96%E5%8F%91%E5%88%B8-%E5%BC%95%E6%B5%81"><span class="toc-text">店外发券 #引流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E5%8D%95%E8%BF%94%E5%88%B8-%E4%BF%83%E5%A4%8D%E8%B4%AD"><span class="toc-text">下单返券 #促复购</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%95%86%E5%93%81%E5%88%B8-%E5%93%81%E7%89%8C%E6%B4%BB%E5%8A%A8-%E4%BF%83%E8%BD%AC%E5%8C%96"><span class="toc-text">商品券 #品牌活动 #促转化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E9%80%81%E8%B4%B9%E5%88%B8-%E4%BF%83%E8%BD%AC%E5%8C%96"><span class="toc-text">配送费券 #促转化</span></a></li></ol></li></ol></li></ol>
+</div></main>
+          <aside class="left-column">
+            
+            <div class="card card-author">
+              
+<img src="/img/bosh.png" class="author-img">
+
+<p class="author-name">BoSh</p>
+<p class="author-description">产品经理</p>
+<div class="author-message">
+  <a class="author-posts-count" href="/archives">
+    <span>3</span>
+    <span>文章</span>
+  </a>
+  <a class="author-categories-count" href="/categories">
+    <span>0</span>
+    <span>分类</span>
+  </a>
+  <a class="author-tags-count" href="/tags">
+    <span>0</span>
+    <span>标签</span>
+  </a>
+</div>
+
+            </div>
+            
+            <div class="sticky-tablet">
+  
+  
+  <article class="display-when-two-columns spacer">
+    <div class="card card-content toc-card">
+      <div class="toc-header"><i class="iconfont icon-menu" style="padding-right: 2px;"></i>目录</div>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BE%8E%E5%9B%A2%E5%A4%96%E5%8D%96%E6%B4%BB%E5%8A%A8"><span class="toc-text">美团外卖活动</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%83%AD%E9%97%A8%E6%B4%BB%E5%8A%A8"><span class="toc-text">热门活动</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%97%E9%93%BA%E6%BB%A1%E5%87%8F-%E4%BF%83%E9%94%80-%E6%8F%90%E5%AE%A2%E5%8D%95"><span class="toc-text">店铺满减 #促销 #提客单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%98%E6%89%A3%E6%B4%BB%E5%8A%A8-%E4%BF%83%E8%BD%AC%E5%8C%96-%E6%96%B0%E6%89%8B%E5%BF%85%E5%BB%BA"><span class="toc-text">折扣活动 #促转化 #新手必建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AB%8B%E5%87%8F%E8%BF%90%E8%B4%B9-%E5%BC%95%E6%B5%81-%E4%BF%83%E8%BD%AC%E5%8C%96"><span class="toc-text">立减运费 #引流 #促转化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%AE%A2%E7%AB%8B%E5%87%8F-%E6%8B%89%E6%96%B0-%E5%BC%95%E6%B5%81"><span class="toc-text">新客立减 #拉新 #引流</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E6%8E%A8%E6%B4%BB%E5%8A%A8"><span class="toc-text">新推活动</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%82%80%E8%AF%B7%E8%B4%AD%E4%B9%B0-%E5%BC%95%E6%B5%81-%E6%8F%90%E5%AE%A2%E5%8D%95"><span class="toc-text">邀请购买 #引流 #提客单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%88%86%E5%93%81%E6%B4%BB%E5%8A%A8-%E6%8E%A8%E6%96%B0%E5%93%81-%E6%8E%A8%E7%88%86%E6%AC%BE"><span class="toc-text">爆品活动 #推新品 #推爆款</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A5%BD%E5%8F%8B%E5%8A%A9%E5%8A%9B%E6%B4%BB%E5%8A%A8-%E4%BF%83%E9%94%80-%E5%BC%95%E6%B5%81-%E6%8B%89%E6%96%B0"><span class="toc-text">好友助力活动 #促销 #引流 #拉新</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%A8%E5%BA%97%E7%B1%BB%E6%B4%BB%E5%8A%A8"><span class="toc-text">门店类活动</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BB%A1%E5%87%8F%E8%BF%90%E8%B4%B9-%E4%BF%83%E8%BD%AC%E5%8C%96-%E6%8F%90%E5%AE%A2%E5%8D%95"><span class="toc-text">满减运费 #促转化 #提客单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BB%A1%E8%B5%A0%E6%B4%BB%E5%8A%A8-%E5%BC%95%E6%B5%81-%E6%8F%90%E5%AE%A2%E5%8D%95"><span class="toc-text">满赠活动 #引流 #提客单</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%95%86%E5%93%81%E7%B1%BB%E6%B4%BB%E5%8A%A8"><span class="toc-text">商品类活动</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B9%B0%E8%B5%A0%E6%B4%BB%E5%8A%A8-%E4%BF%83%E9%94%80"><span class="toc-text">买赠活动 #促销</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E5%88%86%E6%BB%A1%E5%87%8F-%E5%93%81%E7%89%8C%E6%B4%BB%E5%8A%A8-%E4%BF%83%E8%BD%AC%E5%8C%96"><span class="toc-text">部分满减 #品牌活动 #促转化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x%E5%85%83m%E4%BB%B6-%E7%BB%84%E5%90%88%E4%BC%98%E6%83%A0"><span class="toc-text">x元m件 #组合优惠</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%ACn%E4%BB%B6%E4%BC%98%E6%83%A0-%E5%95%86%E8%B6%85%E7%94%9F%E9%B2%9C%E9%A6%96%E9%80%89"><span class="toc-text">第n件优惠 #商超生鲜首选</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A0%E4%BB%B7%E6%8D%A2%E8%B4%AD-%E6%8E%A8%E6%96%B0%E5%93%81-%E6%8F%90%E5%AE%A2%E5%8D%95"><span class="toc-text">加价换购 #推新品 #提客单</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%98%E6%83%A0%E5%88%B8"><span class="toc-text">优惠券</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%95%86%E5%AE%B6%E5%88%B8-%E6%8E%A7%E6%88%90%E6%9C%AC-%E4%BF%83%E9%94%80-%E6%8F%90%E5%AE%A2%E5%8D%95"><span class="toc-text">商家券 #控成本 #促销 #提客单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%97%E5%A4%96%E5%8F%91%E5%88%B8-%E5%BC%95%E6%B5%81"><span class="toc-text">店外发券 #引流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E5%8D%95%E8%BF%94%E5%88%B8-%E4%BF%83%E5%A4%8D%E8%B4%AD"><span class="toc-text">下单返券 #促复购</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%95%86%E5%93%81%E5%88%B8-%E5%93%81%E7%89%8C%E6%B4%BB%E5%8A%A8-%E4%BF%83%E8%BD%AC%E5%8C%96"><span class="toc-text">商品券 #品牌活动 #促转化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E9%80%81%E8%B4%B9%E5%88%B8-%E4%BF%83%E8%BD%AC%E5%8C%96"><span class="toc-text">配送费券 #促转化</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </article>
+  
+  
+  <article class="card card-content">
+    <div class="categories-card">
+  <div class="categories-header"><i class="iconfont icon-fenlei" style="padding-right: 2px;"></i>分类</div>
+  <div class="categories-list">
+    
+  </div>
+</div>
+  </article>
+  
+  <article class="card card-content">
+    <div class="tags-card">
+  <div class="tags-header"><i class="iconfont icon-biaoqian" style="padding-right: 2px;"></i>热门标签</div>
+  <div class="tags-list">
+    
+  </div>
+</div>
+  </article>
+  
+  
+</div>
+          </aside>
+          <aside class="right-column">
+            <div class="sticky-widescreen">
+  
+  
+  <article class="card card-content toc-card">
+    <div class="toc-header"><i class="iconfont icon-menu" style="padding-right: 2px;"></i>目录</div>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BE%8E%E5%9B%A2%E5%A4%96%E5%8D%96%E6%B4%BB%E5%8A%A8"><span class="toc-text">美团外卖活动</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%83%AD%E9%97%A8%E6%B4%BB%E5%8A%A8"><span class="toc-text">热门活动</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%97%E9%93%BA%E6%BB%A1%E5%87%8F-%E4%BF%83%E9%94%80-%E6%8F%90%E5%AE%A2%E5%8D%95"><span class="toc-text">店铺满减 #促销 #提客单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%98%E6%89%A3%E6%B4%BB%E5%8A%A8-%E4%BF%83%E8%BD%AC%E5%8C%96-%E6%96%B0%E6%89%8B%E5%BF%85%E5%BB%BA"><span class="toc-text">折扣活动 #促转化 #新手必建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AB%8B%E5%87%8F%E8%BF%90%E8%B4%B9-%E5%BC%95%E6%B5%81-%E4%BF%83%E8%BD%AC%E5%8C%96"><span class="toc-text">立减运费 #引流 #促转化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%AE%A2%E7%AB%8B%E5%87%8F-%E6%8B%89%E6%96%B0-%E5%BC%95%E6%B5%81"><span class="toc-text">新客立减 #拉新 #引流</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E6%8E%A8%E6%B4%BB%E5%8A%A8"><span class="toc-text">新推活动</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%82%80%E8%AF%B7%E8%B4%AD%E4%B9%B0-%E5%BC%95%E6%B5%81-%E6%8F%90%E5%AE%A2%E5%8D%95"><span class="toc-text">邀请购买 #引流 #提客单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%88%86%E5%93%81%E6%B4%BB%E5%8A%A8-%E6%8E%A8%E6%96%B0%E5%93%81-%E6%8E%A8%E7%88%86%E6%AC%BE"><span class="toc-text">爆品活动 #推新品 #推爆款</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A5%BD%E5%8F%8B%E5%8A%A9%E5%8A%9B%E6%B4%BB%E5%8A%A8-%E4%BF%83%E9%94%80-%E5%BC%95%E6%B5%81-%E6%8B%89%E6%96%B0"><span class="toc-text">好友助力活动 #促销 #引流 #拉新</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%A8%E5%BA%97%E7%B1%BB%E6%B4%BB%E5%8A%A8"><span class="toc-text">门店类活动</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BB%A1%E5%87%8F%E8%BF%90%E8%B4%B9-%E4%BF%83%E8%BD%AC%E5%8C%96-%E6%8F%90%E5%AE%A2%E5%8D%95"><span class="toc-text">满减运费 #促转化 #提客单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BB%A1%E8%B5%A0%E6%B4%BB%E5%8A%A8-%E5%BC%95%E6%B5%81-%E6%8F%90%E5%AE%A2%E5%8D%95"><span class="toc-text">满赠活动 #引流 #提客单</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%95%86%E5%93%81%E7%B1%BB%E6%B4%BB%E5%8A%A8"><span class="toc-text">商品类活动</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B9%B0%E8%B5%A0%E6%B4%BB%E5%8A%A8-%E4%BF%83%E9%94%80"><span class="toc-text">买赠活动 #促销</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E5%88%86%E6%BB%A1%E5%87%8F-%E5%93%81%E7%89%8C%E6%B4%BB%E5%8A%A8-%E4%BF%83%E8%BD%AC%E5%8C%96"><span class="toc-text">部分满减 #品牌活动 #促转化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#x%E5%85%83m%E4%BB%B6-%E7%BB%84%E5%90%88%E4%BC%98%E6%83%A0"><span class="toc-text">x元m件 #组合优惠</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%ACn%E4%BB%B6%E4%BC%98%E6%83%A0-%E5%95%86%E8%B6%85%E7%94%9F%E9%B2%9C%E9%A6%96%E9%80%89"><span class="toc-text">第n件优惠 #商超生鲜首选</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A0%E4%BB%B7%E6%8D%A2%E8%B4%AD-%E6%8E%A8%E6%96%B0%E5%93%81-%E6%8F%90%E5%AE%A2%E5%8D%95"><span class="toc-text">加价换购 #推新品 #提客单</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%98%E6%83%A0%E5%88%B8"><span class="toc-text">优惠券</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%95%86%E5%AE%B6%E5%88%B8-%E6%8E%A7%E6%88%90%E6%9C%AC-%E4%BF%83%E9%94%80-%E6%8F%90%E5%AE%A2%E5%8D%95"><span class="toc-text">商家券 #控成本 #促销 #提客单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%97%E5%A4%96%E5%8F%91%E5%88%B8-%E5%BC%95%E6%B5%81"><span class="toc-text">店外发券 #引流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E5%8D%95%E8%BF%94%E5%88%B8-%E4%BF%83%E5%A4%8D%E8%B4%AD"><span class="toc-text">下单返券 #促复购</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%95%86%E5%93%81%E5%88%B8-%E5%93%81%E7%89%8C%E6%B4%BB%E5%8A%A8-%E4%BF%83%E8%BD%AC%E5%8C%96"><span class="toc-text">商品券 #品牌活动 #促转化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E9%80%81%E8%B4%B9%E5%88%B8-%E4%BF%83%E8%BD%AC%E5%8C%96"><span class="toc-text">配送费券 #促转化</span></a></li></ol></li></ol></li></ol>
+  </article>
+  
+  
+  <article class="card card-content">
+    <div class="recent-posts-card">
+  <div class="recent-posts-header"><i class="iconfont icon-wenzhang_huaban" style="padding-right: 2px;"></i>最近文章</div>
+  <div class="recent-posts-list">
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2020-09-17</div>
+        <a href="/2020/09/17/test-world/"><div class="recent-posts-item-content">Hello World</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2020-09-17</div>
+        <a href="/2020/09/17/meituan/"><div class="recent-posts-item-content">美团外卖活动</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2020-09-17</div>
+        <a href="/2020/09/17/hello-world/"><div class="recent-posts-item-content">Hello World</div></a>
+      </div>
+    
+  </div>
+</div>
+  </article>
+  
+  
+</div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="footer">
+  <div class="footer-container">
+    <div>
+      <div class="footer-dsc">
+        <span>Copyright ©
+          
+          2020 -
+          
+          2020
+        </span>
+        <a href="/" class="footer-link">Your Bosh </a>
+      </div>
+    </div>
+
+    
+    <div class="footer-dsc">
+      
+      
+      Powered by
+      <a href="https://hexo.io/" class="footer-link" target="_blank" rel="nofollow noopener noreferrer">&nbsp;Hexo </a>
+      
+      
+      
+      
+    </div>
+    
+    
+    
+    
+      <div class="footer-dsc">
+        
+        本站总访问量<span id="busuanzi_value_site_pv"></span>次
+        
+        
+        <span>&nbsp;|&nbsp;</span>
+        
+        
+        本站总访客数<span id="busuanzi_value_site_uv"></span>次
+        
+      </div>
+      
+    
+</footer>
+  <a role="button" id="scrollbutton" class="basebutton" >
+  <i class="iconfont icon-arrowleft button-icon"></i>
+</a>
+<a role="button" id="menubutton" class="basebutton">
+  <i class="iconfont icon-menu button-icon"></i>
+</a>
+<a role="button" id="popbutton" class="basebutton">
+  <i class="iconfont icon-expand button-icon"></i>
+</a>
+<a role="button" id="darkbutton" class="basebutton darkwidget">
+  <i class="iconfont icon-weather button-icon"></i>
+</a>
+
+  
+  
+  
+  <script>
+  var addImgLayout = function () {
+    var img = document.querySelectorAll('.post-content img');
+    var i;
+    for (i = 0; i < img.length; i++) {
+      var wrapper = document.createElement('a');
+      wrapper.setAttribute('data-fslightbox', 'gallery');
+      wrapper.setAttribute('href', img[i].getAttribute('data-src'));
+      wrapper.setAttribute('style', 'width: 100%; display: flex; justify-content: center;');
+      img[i].parentElement.insertBefore(wrapper, img[i]);
+      wrapper.appendChild(img[i]);
+    }
+    refreshFsLightbox();
+  }
+</script>
+<script>loadScript("//cdn.jsdelivr.net/npm/fslightbox@3.1.0/index.min.js", addImgLayout)</script>
+  
+  
+  
+<script src="/js/main.js"></script>
+
+  
+  <script>loadScript("/js/lib/busuanzi.min.js")</script>
+  
+  
+  <script>
+    var addLazyload = function () {
+      var observer = lozad('.lozad', {
+        load: function (el) {
+          el.srcset = el.getAttribute('data-src');
+        },
+        loaded: function (el) {
+          el.classList.add('loaded');
+        }
+      });
+      observer.observe();
+    }
+  </script>
+  <script>loadScript("/js/lib/lozad.min.js", addLazyload)</script>
+  
+  
+<script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],e=void 0,0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+
+</html>
